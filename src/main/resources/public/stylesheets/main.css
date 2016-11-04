@@ -1,7 +1,13 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
+#banner {
+  background-image: url("../img/pittlogo.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  background-position:right;
+  background-color: white;
+
+   }
+
+  /*
   .jumbotron .btn-primary {
     background: #845ac7;
     border-color: #845ac7; }
@@ -24,4 +30,52 @@
     border: 2px solid white; }
     .jumbotron .lang-logo img {
       max-width: 100%; }
+
+*/
+
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 small {
+    font-size: 25%;
+    text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+
+.container p {
+    font-size: 18px;
+}
+
+.footer {
+    background: #eee;
+    text-align: center;
+    margin: 10px;
+}
+.footer p {
+    color: ##ff4444;
+    margin: 10px;
+}
+
+#panelCourses, #panelPractice1, #panelPractice2, #panelTeachers1, #panelTeachers2 {
+    display: none;
+}
+
+
+
+
 

@@ -19,8 +19,12 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
+    externalStaticFileLocation("/public/index.html");
 
     get("/hello", (req, res) -> "Hello World");
+
+
+
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
