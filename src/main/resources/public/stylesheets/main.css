@@ -7,33 +7,6 @@
 
    }
 
-  /*
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
-
-*/
-
-
 a:hover,
 a:focus {
   outline: none;
@@ -56,6 +29,16 @@ h2 {
   margin: 0;
 }
 
+nav li a {
+    display: block;
+    padding: 5px;
+    color: #blue;
+    -webkit-transition: opacity .24s ease-in-out;
+    -moz-transition: opacity .24s ease-in-out;
+    -ms-transition: opacity .24s ease-in-out;
+    -o-transition: opacity .24s ease-in-out;
+    transition: opacity .24s ease-in-out;
+}
 
 .container p {
     font-size: 18px;
@@ -66,6 +49,30 @@ h2 {
     text-align: center;
     margin: 10px;
 }
+
+.hover {
+     zoom: 1.03;
+     filter: alpha(opacity = 50);
+     opacity: 0.5;
+      -webkit-transition: opacity .24s ease-in-out;
+         -moz-transition: opacity .24s ease-in-out;
+         -ms-transition: opacity .24s ease-in-out;
+         -o-transition: opacity .24s ease-in-out;
+         transition: opacity .24s ease-in-out;
+
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .footer p {
     color: ##ff4444;
     margin: 10px;
@@ -75,6 +82,13 @@ h2 {
     display: none;
 }
 
+.well{
+    color:#2E2E2E;
+}
+
+#success_message{
+display: none;
+}
 
 
 
