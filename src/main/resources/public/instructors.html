@@ -45,7 +45,7 @@
                 <li><a href="aboutUS.html">About us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <!--<li><a href="login.html#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+                <li><a href="courseManagement.html#"><span class="glyphicon glyphicon-user"></span> Course Management<small> Admin </small></a></li>
                 <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
@@ -60,20 +60,43 @@
 <div class="container">
 
     <div class = "row">
-        <div class="col-sm-4">
+        <div class="col-sm-4"  id ='azizToggle'>
             <h2>Aziz</h2>
             <p><small>University of Pittsburgh</small></p>
             <img src="img/aziz.png" class="img-circle" alt="aziz" width="250" height="250">
+            <div id = "panelAziz">
+                <ul>
+                    <li>A Senior Programmer</li>
+                    <li>8 years experience</li>
+                    <li>aaa169@pitt.edu<small> Email </small></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-4">
+
+        <div class="col-sm-4 " id ='mikeToggle'>
             <h2>Mike</h2>
             <p><small>University of California</small></p>
             <img src="img/man.png" class="img-circle" alt="mike" width="250" height="250">
+            <div id = "panelMike">
+                <ul>
+                    <li>A Data analyst</li>
+                    <li>Interested in machine learning</li>
+                    <li>mike@cla.edu<small> Email </small></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-4">
+
+        <div class="col-sm-4" id ='annToggle'>
             <h2>Ann</h2>
             <p><small>Stanford University</small></p>
             <img src="img/woman.png" class="img-circle" alt="ann" width="250" height="250">
+            <div id = "panelAnn">
+                <ul>
+                    <li>A statistician</li>
+                    <li>Worked at Yahoo Lab for 19 years</li>
+                    <li>ann@stanford.edu<small> Email </small></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -82,7 +105,7 @@
 
 
 <footer class="footer">
-    <div class="container">
+    <div>
         <p class="text-muted">© 2016 Ischoolera All Rights Reseverd | Design by Aziz</p>
     </div>
 </footer>
@@ -92,8 +115,3 @@
 </html>
 
 
-<!--References-->
-
-<!--http://bootsnipp.com/snippets/featured/login-amp-signup-forms-in-panel-->
-<!--http://www.w3schools.com/bootstrap/bootstrap_navbar.asp-->
-<!--http://www.markups.io/preview/varsity/-->

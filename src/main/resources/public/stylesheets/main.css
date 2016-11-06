@@ -78,7 +78,7 @@ nav li a {
     margin: 10px;
 }
 
-#panelCourses, #panelPractice1, #panelPractice2, #panelTeachers1, #panelTeachers2 {
+#panelCourses, #panelPractice1, #panelPractice2, #panelTeachers1, #panelTeachers2, #panelAziz, #panelMike, #panelAnn {
     display: none;
 }
 
@@ -88,6 +88,12 @@ nav li a {
 
 #success_message{
 display: none;
+}
+
+.container ul{
+    margin: 10px;
+    padding: 20px;
+    color: #33b5e5;
 }
 
 #quote{
@@ -101,6 +107,19 @@ visibility: hidden;
  height:1px;
  width:100%;
  border-top:1px solid gray;
+}
+
+#shortTutorials small{
+    font-family : Georgia, Times, serif;
+    font-size : 16px;
+    color: #ff4444;
+}
+
+#shortTutorials p{
+    font-family : Georgia, Times, serif;
+    font-size : 16px;
+    color: #33b5e5;
+    font-style: italic;
 }
 
 
