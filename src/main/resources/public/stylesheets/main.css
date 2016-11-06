@@ -90,6 +90,18 @@ nav li a {
 display: none;
 }
 
+#quote{
+display: none;
+visibility: hidden;
+}
+
+.h-divider{
+ margin-top:50px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
 
 
 

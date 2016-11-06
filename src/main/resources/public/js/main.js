@@ -44,6 +44,10 @@ $(document).ready(function(){
                               $("#allCourses tbody > tr").not($(this)).removeClass('hover');
                });
 
+             $("#showQuote").click(function(){
+
+                $('#quote').css('visibility','visible').show();
+             });
 });
 
   $(document).ready(function() {
@@ -149,22 +153,37 @@ $(document).ready(function(){
             }
         })
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
+            $('#success_message').slideDown({ opacity: "show" }, "slow");
                 $('#contact_form').data('bootstrapValidator').resetForm();
 
-            // Prevent form submission
+
             e.preventDefault();
 
-            // Get the form instance
+
             var $form = $(e.target);
 
-            // Get the BootstrapValidator instance
+
             var bv = $form.data('bootstrapValidator');
 
-            // Use Ajax to submit form data
+
             $.post($form.attr('action'), $form.serialize(), function(result) {
                 console.log(result);
             }, 'json');
         });
 });
-
+$(document).ready(function () {
+    var divs = $('.quotesCollection>.quotes');
+    var now = 0; // currently shown div
+    divs.hide().first().show();
+    $("button[name=next]").click(function (e) {
+        divs.eq(now).hide();
+        now = (now + 1 < divs.length) ? now + 1 : 0;
+        divs.eq(now).show(); // show next
+    });
+    $("button[name=previous]").click(function (e) {
+        divs.eq(now).hide();
+        now = (now > 0) ? now - 1 : divs.length - 1;
+        divs.eq(now).show(); // or .css('display','block');
+        //console.log(divs.length, now);
+    });
+});

@@ -8,14 +8,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
 
     <script src="js/main.js"></script>
 
 </head>
 <body>
 
-
-<nav class="navbar navbar-default">
+<nav  class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -23,29 +25,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Ischooera</a>
+            <a class="navbar-brand" href="index.html">Ischoolera</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Top Courses</a></li>
-                        <li><a href="#">New Courses</a></li>
-                        <li><a href="http://www.google.com">All Courses</a></li>
+                        <li><a href="newCourses.html">New Courses</a></li>
+                        <li><a href="allCourses.html">All Courses</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About us</a></li>
+                <li><a id ="myid" href="shortTutorials.html">Short Tutorials</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="aboutUS.html">About us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="singup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <!--<li><a href="login.html#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
                 <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
 
 <div class="container">
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
