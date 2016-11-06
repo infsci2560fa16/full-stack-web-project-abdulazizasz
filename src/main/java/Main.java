@@ -21,17 +21,21 @@ public class Main {
     staticFileLocation("/public");
     externalStaticFileLocation("/public/index.html");
 
+
+    get("/", (req, res) -> renderContent("/public/index.html"));
+
+
     get("/hello", (req, res) -> "Hello World");
 
 
 
 
-    get("/", (request, response) -> {
-            Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
-
-            return new ModelAndView(attributes, "index.ftl");
-        }, new FreeMarkerEngine());
+//    get("/", (request, response) -> {
+//            Map<String, Object> attributes = new HashMap<>();
+//            attributes.put("message", "Hello World!");
+//
+//            return new ModelAndView(attributes, "index.ftl");
+//        }, new FreeMarkerEngine());
 
     get("/db", (req, res) -> {
       Connection connection = null;
