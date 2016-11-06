@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fe476b5-8476-4433-b97f-fc1433ee7dd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/aboutUS.html" afterPath="$PROJECT_DIR$/src/main/resources/public/aboutUS.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/allCourses.html" afterPath="$PROJECT_DIR$/src/main/resources/public/allCourses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/instructors.html" afterPath="$PROJECT_DIR$/src/main/resources/public/instructors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/js/main.js" afterPath="$PROJECT_DIR$/src/main/resources/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/login.html" afterPath="$PROJECT_DIR$/src/main/resources/public/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/newCourses.html" afterPath="$PROJECT_DIR$/src/main/resources/public/newCourses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/shortTutorials.html" afterPath="$PROJECT_DIR$/src/main/resources/public/shortTutorials.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/src/main/resources/public/stylesheets/main.css" />
-    </list>
+    <list default="true" id="7fe476b5-8476-4433-b97f-fc1433ee7dd4" name="Default" comment="" />
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,7 +24,7 @@
       <file leaf-file-name="instructors.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/instructors.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
+            <state relative-caret-position="175">
               <caret line="75" column="89" selection-start-line="75" selection-start-column="89" selection-end-line="75" selection-end-column="89" />
               <folding />
             </state>
@@ -827,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/instructors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="175">
           <caret line="75" column="89" selection-start-line="75" selection-start-column="89" selection-end-line="75" selection-end-column="89" />
           <folding />
         </state>
