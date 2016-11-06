@@ -22,8 +22,8 @@ public class Main {
     externalStaticFileLocation("/public/index.html");
 
 
-    get("/", (req, res) -> renderContent("/public/index.html"));
-
+    get("/", (request, response) -> new ModelAndView(new HashMap(), "/public/index.html"),
+            new FreeMarkerEngine());
 
     get("/hello", (req, res) -> "Hello World");
 
