@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ischoolera</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+
+    <script src="js/main.js"></script>
+
+
+</head>
+<body>
+
+<nav  class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Ischoolera</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="newCourses.html">New Courses</a></li>
+                        <li><a href="allCourses.html">All Courses</a></li>
+                    </ul>
+                </li>
+                <li><a id ="myid" href="shortTutorials.html">Short Tutorials</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="aboutUS.html">About us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="courseManagement.html#"><span class="glyphicon glyphicon-user"></span> Course Management<small> Admin </small></a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center ">
+    <h1>Courses Management</h1>
+    <p>Admin</p>
+</div>
+
+
+<div class="container">
+    <h2>Manage Courses</h2>
+    <table class="table" id ="courseManagement">
+        <thead>
+        <tr>
+            <th>Course</th>
+            <th>Area</th>
+            <th>Instructor</th>
+            <th>Duration</th>
+            <th>Starting Date</th>
+            <th>Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Natural Language Processing</td>
+            <td>Machine Learning</td>
+            <td>Aziz</td>
+            <td>40 hr</td>
+            <td>2016-11-27</td>
+            <td class = "deleteRow"><button type="button" class="btn btn-danger">Delete</button></td>
+
+        </tr>
+
+        <tr>
+            <td>Natural Language Processing</td>
+            <td>Machine Learning</td>
+            <td>Aziz</td>
+            <td>40 hr</td>
+            <td>2016-11-27</td>
+            <td class = 'deleteRow'><button type='button' class='btn btn-danger'>Delete</button></td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+    <form >
+        <div class="form-group col-xs-3">
+            <input  class="form-control" id="course" placeholder="Course Name">
+        </div>
+        <div class="form-group col-xs-3">
+            <input  class="form-control" id="area" placeholder="Area">
+        </div>
+        <div class="form-group col-xs-3">
+            <input  class="form-control" id="instructor" placeholder="instructor">
+        </div>
+        <div class="form-group col-xs-3">
+            <input  class="form-control" id="duration" placeholder="duration">
+        </div>
+        <div class="form-group col-xs-3">
+            <input  class="form-control" id="startingDate" placeholder="Starting Date">
+        </div>
+
+
+
+
+    </form>
+
+    <div>
+        <button type="submit" class="btn btn-primary addRow">Add a Class</button>
+    </div>
+
+
+</div>
+
+
+
+
+<footer class="footer">
+    <div>
+        <p class="text-muted">© 2016 Ischoolera All Rights Reseverd | Design by Aziz</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+
+

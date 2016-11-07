@@ -59,6 +59,7 @@ $(document).ready(function(){
 
                 $('#quote').css('visibility','visible').show();
              });
+
 });
 
 // Home page quotes
@@ -156,4 +157,39 @@ $(document).ready(function(){
         console.log(result);
     }, 'json');
     });
+});
+
+$(document).ready(function(){
+
+
+
+                    // Add new rows
+
+                  $(".addRow").click(function(){
+                    var course = $("#course").val();
+                    var area = $("#area").val();
+                    var instructor = $("#instructor").val();
+                    var duration = $("#duration").val();
+                    var startingDate = $("#startingDate").val();
+                    var result = "<tr><td>" + course + "</td><td>" + area +
+                    "</td><td>" + instructor + "</td><td>" + duration + "</td><td>" +
+                    startingDate + "</td><td class = 'deleteRow'><button type='button' class='btn btn-danger'>Delete</button></td></tr>";
+                    $("#courseManagement tbody").append(result);
+                  });
+
+
+
+
+
+
+
+             // Delete and add rows in course management page
+                       $(".deleteRow").click(function(){
+                                 var delete_row = $(this).parent('tr');
+                                     delete_row.addClass("danger");
+                                     delete_row.fadeOut(2000, function(){
+                                         $(this).remove();
+                                     });
+                              });
+
 });
