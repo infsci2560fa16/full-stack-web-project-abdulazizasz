@@ -122,5 +122,17 @@ visibility: hidden;
     font-style: italic;
 }
 
+fieldset.scheduler-border {
+    border: 1px groove;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+
+}
+
+legend.scheduler-border {
+    width:auto;
+    padding:0 10px;
+}
+
 
 

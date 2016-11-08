@@ -73,17 +73,16 @@ $(document).ready(function(){
                  startingDate + "</td><td class = 'deleteRow'><button type='button' class='btn btn-danger'>Delete</button></td></tr>";
                  $("#courseManagement tbody").append(result);
                });
-
-          // Delete and add rows in course management page
-                    $(".deleteRow").click(function(){
-                              var delete_row = $(this).parent('tr');
-                                  delete_row.addClass("danger");
-                                  delete_row.fadeOut(2000, function(){
-                                      $(this).remove();
-                                  });
-                           });
-
+               // Delete and add rows in course management page
+                                   $(".deleteRow").click(function(){
+                                             var delete_row = $(this).parent('tr');
+                                                 delete_row.addClass("danger");
+                                                 delete_row.fadeOut(2000, function(){
+                                                     $(this).remove();
+                                                 });
+                                          });
 });
+
 
 // Home page quotes
 $(document).ready(function () {
@@ -182,3 +181,16 @@ $(document).ready(function(){
     });
 });
 
+/// Validate the login Form
+
+function validate(){
+
+    var userName = document.getElementById("login-username").value;
+    var userPassword = document.getElementById("login-password").value;
+
+    if( userName === "" || userPassword === "")
+        alert("You should enter your user name and password");
+    else
+        alert("Succeed!!!");
+
+}
