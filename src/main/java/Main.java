@@ -21,20 +21,45 @@ public class Main {
     staticFileLocation("/public");
     externalStaticFileLocation("/public/index.html");
 
-
-
-
     get("/hello", (req, res) -> "Hello World");
-
-
-
-
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
-
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
+
+    get("/index", (request, response) -> {
+       return new ModelAndView(new HashMap(), "index.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/newCourses", (request, response) -> {
+      return new ModelAndView(new HashMap(), "newCourses.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/allCourses", (request, response) -> {
+      return new ModelAndView(new HashMap(), "allCourses.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/shortTutorials", (request, response) -> {
+      return new ModelAndView(new HashMap(), "shortTutorials.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/instructors", (request, response) -> {
+      return new ModelAndView(new HashMap(), "instructors.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/aboutUS", (request, response) -> {
+      return new ModelAndView(new HashMap(), "aboutUS.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/courseManagement", (request, response) -> {
+      return new ModelAndView(new HashMap(), "courseManagement.ftl");
+    }, new FreeMarkerEngine());
+
+    get("/login", (request, response) -> {
+      return new ModelAndView(new HashMap(), "login.ftl");
+    }, new FreeMarkerEngine());
+
 
     get("/db", (req, res) -> {
       Connection connection = null;

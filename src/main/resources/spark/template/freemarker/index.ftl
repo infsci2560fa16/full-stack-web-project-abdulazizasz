@@ -8,49 +8,78 @@
 
   <#include "nav.ftl">
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Java on Heroku</h1>
-    <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-java"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started with Java on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started</a> guide to learn more!</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-java">Deploying Java Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
+<div class="jumbotron text-center ">
+      <h1>Ischooera <small>University of Pittsburgh</small></h1>
+      <p>Enrich your knowledge by learning!</p>
 </div>
 
+<div  class="container">
+    <div class = "row">
+        <div id = 'coursesToggle' class="col-sm-4">
+            <h3>Courses <small>Details</small></h3>
+            <img src="img/courses.png" class="img-circle" alt="courses" width="100" height="100">
+            <!--<p class = "text-danger">My name is Abdulaziz and I am a student</p>-->
+            <p id ="panelCourses" >Explore our current courses to learn more about Data mining world.
+            <a href="allCourses.html">Courses</a></p>
+        </div>
+        <div id = 'practiceToggle' class="col-sm-4">
+            <h3 >Practice <small>Details</small></h3>
+            <img src="img/practice.png" class="img-circle" alt="practice" width="100" height="100">
+            <p id="panelPractice1">Tutorials are designed to help you understand the courses more thoroughly.
+                <a href="shortTutorials.html">Tutorials</a></p>
+            <p id = "panelPractice2">There are multiple real-world problems that you can practice with to give a better understanding
+            of how to implement all the concepts in order to solve real world data mining problems.</p>
+        </div>
+        <div id = 'teacherToggle' class="col-sm-4">
+            <h3>Teachers <small>Details</small></h3>
+            <img src="img/teachers.png" class="img-circle" alt="teacher" width="100" height="100">
+            <p id = 'panelTeachers1'>All courses and tutorials are taught by knowledgeable teachers who had strong experience in this area.
+                <a href="instructors.html">Instructors</a></p>
+            <p id = 'panelTeachers2'>Teachers aim to link the courses with tutorials, so it becomes much easier and faster to learn<a href="allCourses.html">Courses</a></p>
+        </div>
+    </div>
 
+    <div class="h-divider"></div>
+
+    <br/><br/>
+    <div class = "quotesCollection">
+        <h3>Useful quotes</h3>
+        <div class = "row quotes">
+            <div class="col-sm-6 ">
+                <blockquote>
+                    <p>"You can have data without information, but you cannot have information without data"</p>
+                    <footer> <b>Daniel Keys Moran</b>, an American computer programmer and science fiction writer.</footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class = "row quotes">
+            <div class="col-sm-6">
+                <blockquote>
+                    <p>"All models are wrong!. A few of them are useful"</p>
+                    <footer> <b>Aziz</b> a data scientist chief technology.</footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class = "row quotes">
+            <div class="col-sm-6">
+                <blockquote>
+                    <p>"The goal is to turn data into information, and information into insight."</p>
+                    <footer> <b>Carly Fiorina</b>former executive, president, and chair of Hewlett-Packard Co.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class = "col-md-offset">
+        <button  id = "showQuoteNext" name = "next" class="btn btn-danger"> Previous Quote</button>
+        <button  id = "showQuotePrevious" name = "previous" class="btn btn-danger"> Next Quote </button>
+    </div>
+
+
+
+</div>
+
+  <#include "footer.ftl">
 </body>
 </html>
