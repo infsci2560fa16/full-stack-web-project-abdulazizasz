@@ -9,7 +9,11 @@
   <#include "nav.ftl">
 
 <div class="container">
-  ${message}
+
+    <div class="alert alert-success">
+      <strong>${message}!</strong>
+    </div>
+
 </div>
 
 </body>

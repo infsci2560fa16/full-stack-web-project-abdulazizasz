@@ -1,12 +1,12 @@
 import java.sql.*;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Map;
+import java.util.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
 import static spark.Spark.*;
+
+import javafx.beans.binding.ObjectExpression;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 import static spark.Spark.get;
@@ -14,6 +14,10 @@ import static spark.Spark.get;
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class Main {
+
+  public static UsersDbService<Users> usersDbService = new UsersPostgresDao<Users>();
+
+
 
   public static void main(String[] args) {
 
@@ -60,31 +64,70 @@ public class Main {
       return new ModelAndView(new HashMap(), "login.ftl");
     }, new FreeMarkerEngine());
 
+    get("/signup", (request, response) -> {
+      return new ModelAndView(new HashMap(), "signup.ftl");
+    }, new FreeMarkerEngine());
 
-    get("/db", (req, res) -> {
+
+    post("/insert_users", (request, response) -> {
+
+      String firstName = request.queryParams("first-name");
+      String lastName = request.queryParams("last-name");
+      String username = request.queryParams("user-name");
+      String password = request.queryParams("user-password");
+
       Connection connection = null;
+      PreparedStatement pst = null;
+
       Map<String, Object> attributes = new HashMap<>();
-      try {
+
+      try{
+
         connection = DatabaseUrl.extract().getConnection();
+        String sql = "INSERT INTO users(firstName, lastName, username, password) VALUES(?, ?, ?, ?)";
+        pst = connection.prepareStatement(sql);
 
-        Statement stmt = connection.createStatement();
-        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-        stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-        ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+        pst.setString(1, firstName);
+        pst.setString(2, lastName);
+        pst.setString(3, username);
+        pst.setString(4, password);
 
-        ArrayList<String> output = new ArrayList<String>();
-        while (rs.next()) {
-          output.add( "Read from DB: " + rs.getTimestamp("tick"));
-        }
+        pst.executeUpdate();
 
-        attributes.put("results", output);
-        return new ModelAndView(attributes, "db.ftl");
-      } catch (Exception e) {
-        attributes.put("message", "There was an error: " + e);
+        attributes.put("message", "Success!! Thank you for registering");
+        return new ModelAndView(attributes, "error.ftl");
+      } catch (Exception e){
+        attributes.put("message", "There was an error" + e);
         return new ModelAndView(attributes, "error.ftl");
       } finally {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
+    }, new FreeMarkerEngine());
+
+
+    get("/current_users", (request, response) -> {
+      Map<String, Object> viewObjects = new HashMap<String, Object>();
+
+      ArrayList<Users> users = usersDbService.readAll();
+
+      if(users.isEmpty()) {
+        viewObjects.put("hasNoUsers", "Sorry there is no current users");
+      } else {
+
+        Deque<Users> showUsers = new ArrayDeque<Users>();
+
+        for(Users user : users) {
+
+            showUsers.addFirst(user);
+
+        }
+
+        viewObjects.put("users", showUsers);
+      }
+
+      viewObjects.put("templateName", "usersList.ftl");
+
+      return modelAndView(viewObjects, "layout.ftl");
     }, new FreeMarkerEngine());
 
   }
