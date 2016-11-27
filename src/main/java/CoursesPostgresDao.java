@@ -11,7 +11,6 @@ import java.net.URISyntaxException;
 
 import static spark.Spark.*;
 
-import javafx.beans.binding.ObjectExpression;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 import static spark.Spark.get;
