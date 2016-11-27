@@ -103,6 +103,7 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 
             if(resultSet.next()) {
                Users entity = new Users(
+                       resultSet.getInt("id"),
                        resultSet.getString("firstName"),
                        resultSet.getString("lastName"),
                        resultSet.getString("username"),
@@ -144,6 +145,7 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 
             while (resultSet.next()) {
                 Users entity = new Users(
+                        resultSet.getInt("id"),
                         resultSet.getString("firstName"),
                         resultSet.getString("lastName"),
                         resultSet.getString("username"),
@@ -185,6 +187,7 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
             pstmt.setString(2, lastName);
             pstmt.setString(3, username);
             pstmt.setString(4, password);
+
             pstmt.setInt(5, id);
 
             pstmt.executeUpdate();

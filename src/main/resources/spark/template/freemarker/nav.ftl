@@ -21,10 +21,21 @@
                 <li><a id ="myid" href="/shortTutorials">Short Tutorials</a></li>
                 <li><a href="/instructors">Instructors</a></li>
                 <li><a href="/aboutUS">About us</a></li>
+                <li><a href="../usersList.html">Users List</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/courseManagement"><span class="glyphicon glyphicon-user"></span> Course Management<small> Admin </small></a></li>
-                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Management<small> Admin </small><span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+
+                     <li><a href="/courseManagement"><span class="glyphicon glyphicon-user"></span> Course Management</a></li>
+                     <li><a href="/current_users"><span class="glyphicon glyphicon-user"></span>Current Users</a></li>
+
+                  </ul>
+                </li>
+
+                     <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </div>

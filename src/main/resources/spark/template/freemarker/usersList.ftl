@@ -13,7 +13,6 @@
             <tr>
                 <th> Name</th>
                 <th>User Name</th>
-                <th>Password</th>
             </tr>
     </thead>
         <#list users as user>
@@ -21,7 +20,6 @@
             <tr>
                 <td>${user.getFirstName()} ${user.getLastName()}</td>
                 <td>${user.getUsername()}</td>
-                <td>${user.getPassword()}</td>
                 <td>${user.getEditUser()} | ${user.getDeleteUser()}</td>
             </tr>
             </tbody>
