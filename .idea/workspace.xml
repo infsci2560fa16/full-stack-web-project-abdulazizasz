@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fe476b5-8476-4433-b97f-fc1433ee7dd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CoursesPostgresDao.java" afterPath="$PROJECT_DIR$/src/main/java/CoursesPostgresDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/InstructorsPostgresDao.java" afterPath="$PROJECT_DIR$/src/main/java/InstructorsPostgresDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/UsersPostgresDao.java" afterPath="$PROJECT_DIR$/src/main/java/UsersPostgresDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,15 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="199" column="38" selection-start-line="199" selection-start-column="38" selection-end-line="199" selection-end-column="38" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#740#749#0" expanded="true" />
-                <element signature="e#852#865#0" expanded="true" />
+                <element signature="e#742#751#0" expanded="true" />
+                <element signature="e#854#867#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,7 +167,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersPostgresDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersPostgresDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UsersPostgresDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -249,11 +246,11 @@
         <option value="$PROJECT_DIR$/src/main/java/CoursesDbService.java" />
         <option value="$PROJECT_DIR$/src/main/java/InstructorsDbService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instructors.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoursesPostgresDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/InstructorsPostgresDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/UsersPostgresDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -1110,18 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="199" column="38" selection-start-line="199" selection-start-column="38" selection-end-line="199" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#740#749#0" expanded="true" />
-            <element signature="e#852#865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CoursesPostgresDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1174,6 +1159,17 @@
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#742#751#0" expanded="true" />
+            <element signature="e#854#867#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
