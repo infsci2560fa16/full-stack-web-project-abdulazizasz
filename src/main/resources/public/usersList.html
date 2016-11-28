@@ -14,27 +14,9 @@
 
     <script src="js/main.js"></script>
 
-
-    <script>
-            $(function () {
-                $.ajax({
-                    url: "/aziz",
-                    success: function (result) {
-                        var data = JSON.parse(result);
-                        $("#current-time").html(result);
-                    }});
-            });
-
-
-
-        </script>
 </head>
-
-
-
 <body>
-<p>Hello from Java Grunt!</p>
-<div id="current-time"></div>
-
+<div id="users-list"></div>
+<button id ="mine" type = "button" onclick="listAllUsers()">list</button>
 </body>
 </html>

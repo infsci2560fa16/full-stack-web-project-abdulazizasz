@@ -194,3 +194,41 @@ function validate(){
         alert("Succeed!!!");
 
 }
+
+
+function listAllUsers () {
+                $.ajax({
+                    url: "/all-users",
+                    success: function (result) {
+                        var data = JSON.parse(result);
+                        $(data).each(function(i, val){
+                                 $("#users-list").append("<li>" + val.firstName +  " " + val.lastName + "</li>"+ "<br>");
+                        });
+
+                    }});
+            }
+
+function listAllCourses () {
+                $.ajax({
+                    url: "/all-courses",
+                    success: function (result) {
+                        var data = JSON.parse(result);
+                        $(data).each(function(i, val){
+                                 $("#courses-list").append("<li>" + val.name + " : " + val.area + " : " + val.duration +
+                                  " : " + val.startingDate + "</li>" + "<br>");
+                        });
+
+                    }});
+            }
+function listAllInstructors () {
+                $.ajax({
+                    url: "/all-instructors",
+                    success: function (result) {
+                        var data = JSON.parse(result);
+                        $(data).each(function(i, val){
+                                 $("#instructors-list").append("<li>" + val.name + " " +
+                                 val.email + " " + val.experience +  "</li><br>");
+                        });
+
+                    }});
+            }

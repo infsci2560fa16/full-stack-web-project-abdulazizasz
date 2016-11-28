@@ -86,6 +86,13 @@ public class Main {
       return new ModelAndView(new HashMap(), "signup.ftl");
     }, new FreeMarkerEngine());
 
+    get("/api", (request, response) -> {
+      Map<String, Object> viewObjects = new HashMap<String, Object>();
+
+      viewObjects.put("templateName", "api.ftl");
+      return modelAndView(viewObjects, "layout.ftl");
+    }, new FreeMarkerEngine());
+
 
     post("/insert_users", (request, response) -> {
 
@@ -196,7 +203,6 @@ public class Main {
 
 
     get("/all-users", (request, response) -> {
-      response.type("application/json");
       return usersDbService.readAll();
     }, gson::toJson);
 
