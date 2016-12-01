@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<ischool xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ./courses_instructors.xsd">
+
+	<courses>
+		<id>1</id>
+		<name>Data Analytics</name>
+		<area>
+			<id>1</id>
+			<name>Statistical Learning</name>
+		</area>
+		<duration>30 hr</duration>
+		<instructors>
+			<id>1</id>
+			<name>Aziz</name>
+			<email>aaa169@pitt.edu</email>
+			<experience>University of Pittsburgh</experience>
+		</instructors>
+	</courses>
+	<courses>
+		<id>2</id>
+		<name>Machine Learning</name>
+		<area>
+			<id>2</id>
+			<name>Big Data</name>
+		</area>
+		<duration>6 hr</duration>
+		<instructors>
+			<id>2</id>
+			<name>Mike</name>
+			<email>mike@cla.edu</email>
+			<experience>University of California</experience>
+		</instructors>
+	</courses>
+	<courses>
+		<id>3</id>
+		<name>Cloud Computing</name>
+		<area>
+			<id>3</id>
+			<name>Advanced Computing</name>
+		</area>
+		<duration>10 hr</duration>
+		<instructors>
+			<id>3</id>
+			<name>Ann</name>
+			<email>ann@stanford.edu</email>
+			<experience>Stanford University</experience>
+		</instructors>
+	</courses>
+	<courses>
+		<id>4</id>
+		<name>Database Management Systems</name>
+		<area>
+			<id>2</id>
+			<name>Big Data</name>
+		</area>
+		<duration>10 hr</duration>
+		<instructors>
+			<id>4</id>
+			<name>Sam</name>
+			<email>sam123@pitt.edu</email>
+			<experience>University of Pittsburgh</experience>
+		</instructors>
+	</courses>
+	<courses>
+		<id>5</id>
+		<name>Statistical Inference</name>
+		<area>
+			<id>1</id>
+			<name>Statistical Learning</name>
+		</area>
+		<duration>23 hr</duration>
+		<instructors>
+			<id>1</id>
+			<name>Aziz</name>
+			<email>aaa169@pitt.edu</email>
+			<experience>University of Pittsburgh</experience>
+		</instructors>
+	</courses>
+</ischool>

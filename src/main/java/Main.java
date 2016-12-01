@@ -20,6 +20,7 @@ import spark.Response;
 import spark.Route;
 
 
+
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class Main {
@@ -227,6 +228,14 @@ public class Main {
       return instructorsDbService.readAll();
     }, gson::toJson);
 
+    get("/courses", (request, response) -> {
+      try {
+        response.type("text/xml");
+        return coursesDbService.getAllCourses();
+      } catch (Exception e){
+        return e;
+      }
+    });
 
 
 

@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -138,6 +140,21 @@ public class CoursesPostgresDao<T extends Courses> implements CoursesDbService<T
         }
 
         return (ArrayList<T>) results;
+    }
+
+    public String getAllCourses(){
+        try{
+            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/public/xml/courses_instructors.xml"));
+            String line;
+            StringBuilder xml = new StringBuilder();
+            while ((line = br.readLine()) != null){
+                xml.append(line.trim());
+            }
+            return xml.toString();
+        } catch (Exception e){
+            return e.toString();
+        }
+
     }
 
 

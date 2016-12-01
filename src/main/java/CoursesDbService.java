@@ -7,7 +7,7 @@ public interface CoursesDbService<T> {
 
     public T readOne(int id);
     public ArrayList<T> readAll();
-
+    public String getAllCourses();
 
 
 }
