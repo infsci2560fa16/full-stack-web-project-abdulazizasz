@@ -3,78 +3,78 @@
 <ischool xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ./courses_instructors.xsd">
 
 	<courses>
-		<id>1</id>
-		<name>Data Analytics</name>
-		<area>
-			<id>1</id>
-			<name>Statistical Learning</name>
-		</area>
-		<duration>30 hr</duration>
+		<course_id>1</course_id>
+		<course_name>Data Analytics</course_name>
+		<course_area>
+			<area_id>1</area_id>
+			<area_name>Statistical Learning</area_name>
+		</course_area>
+		<course_duration>30 hr</course_duration>
 		<instructors>
-			<id>1</id>
-			<name>Aziz</name>
-			<email>aaa169@pitt.edu</email>
-			<experience>University of Pittsburgh</experience>
+			<instructor_id>1</instructor_id>
+			<instructor_name>Aziz</instructor_name>
+			<instructor_email>aaa169@pitt.edu</instructor_email>
+			<instructor_experience>University of Pittsburgh</instructor_experience>
 		</instructors>
 	</courses>
 	<courses>
-		<id>2</id>
-		<name>Machine Learning</name>
-		<area>
-			<id>2</id>
-			<name>Big Data</name>
-		</area>
-		<duration>6 hr</duration>
+		<course_id>2</course_id>
+		<course_name>Machine Learning</course_name>
+		<course_area>
+			<area_id>2</area_id>
+			<area_name>Big Data</area_name>
+		</course_area>
+		<course_id_duration>6 hr</course_id_duration>
 		<instructors>
-			<id>2</id>
-			<name>Mike</name>
-			<email>mike@cla.edu</email>
-			<experience>University of California</experience>
+			<instructor_id>2</instructor_id>
+			<instructor_name>Mike</instructor_name>
+			<instructor_email>mike@cla.edu</instructor_email>
+			<instructor_experience>University of California</instructor_experience>
 		</instructors>
 	</courses>
 	<courses>
-		<id>3</id>
-		<name>Cloud Computing</name>
-		<area>
-			<id>3</id>
-			<name>Advanced Computing</name>
-		</area>
-		<duration>10 hr</duration>
+		<course_id>3</course_id>
+		<course_name>Cloud Computing</course_name>
+		<course_area>
+			<area_id>3</area_id>
+			<area_name>Advanced Computing</area_name>
+		</course_area>
+		<course_duration>10 hr</course_duration>
 		<instructors>
-			<id>3</id>
-			<name>Ann</name>
-			<email>ann@stanford.edu</email>
-			<experience>Stanford University</experience>
+			<instructor_id>3</instructor_id>
+			<instructor_name>Ann</instructor_name>
+			<instructor_email>ann@stanford.edu</instructor_email>
+			<instructor_experience>Stanford University</instructor_experience>
 		</instructors>
 	</courses>
 	<courses>
-		<id>4</id>
-		<name>Database Management Systems</name>
-		<area>
-			<id>2</id>
-			<name>Big Data</name>
-		</area>
-		<duration>10 hr</duration>
+		<course_id>4</course_id>
+		<course_name>Database Management Systems</course_name>
+		<course_area>
+			<area_id>2</area_id>
+			<area_name>Big Data</area_name>
+		</course_area>
+		<course_duration>10 hr</course_duration>
 		<instructors>
-			<id>4</id>
-			<name>Sam</name>
-			<email>sam123@pitt.edu</email>
-			<experience>University of Pittsburgh</experience>
+			<instructor_id>4</instructor_id>
+			<instructor_name>Sam</instructor_name>
+			<instructor_email>sam123@pitt.edu</instructor_email>
+			<instructor_experience>University of Pittsburgh</instructor_experience>
 		</instructors>
 	</courses>
 	<courses>
-		<id>5</id>
-		<name>Statistical Inference</name>
-		<area>
-			<id>1</id>
-			<name>Statistical Learning</name>
-		</area>
-		<duration>23 hr</duration>
+		<course_id>5</course_id>
+		<course_name>Statistical Inference</course_name>
+		<course_area>
+			<area_id>1</area_id>
+			<area_name>Statistical Learning</area_name>
+		</course_area>
+		<course_duration>23 hr</course_duration>
 		<instructors>
-			<id>1</id>
-			<name>Aziz</name>
-			<email>aaa169@pitt.edu</email>
-			<experience>University of Pittsburgh</experience>
+			<instructor_id>1</instructor_id>
+			<instructor_name>Aziz</instructor_name>
+			<instructor_email>aaa169@pitt.edu</instructor_email>
+			<instructor_experience>University of Pittsburgh</instructor_experience>
 		</instructors>
 	</courses>
 </ischool>

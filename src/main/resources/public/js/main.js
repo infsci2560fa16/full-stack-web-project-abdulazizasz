@@ -232,3 +232,61 @@ function listAllInstructors () {
 
                     }});
             }
+
+/// Getting all the data from xml
+function loadXML(){
+
+var xhttp;
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        listAllCoursesName(this);
+    }
+};
+xhttp.open("GET", "/courses_xml", true);
+xhttp.send();
+
+}
+
+
+function listAllCoursesName(xml) {
+
+    var x, i, txt, xmlDoc;
+    xmlDoc = xml.responseXML;
+    txt = "";
+    x = xmlDoc.getElementsByTagName("course_name");
+    for (i = 0; i < x.length; i++) {
+        txt += x[i].childNodes[0].nodeValue + "<br>";
+
+    }
+    document.getElementById("courses_names").innerHTML = txt;
+}
+
+/// Getting all the data from xml
+function loadXML_areas(){
+
+var xhttp;
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        listAllAreaName(this);
+    }
+};
+xhttp.open("GET", "/courses_xml", true);
+xhttp.send();
+
+}
+
+
+function listAllAreaName(xml) {
+
+    var x, i, txt, xmlDoc;
+    xmlDoc = xml.responseXML;
+    txt = "";
+    x = xmlDoc.getElementsByTagName("area_name");
+    for (i = 0; i < x.length; i++) {
+        txt += x[i].childNodes[0].nodeValue + "<br>";
+
+    }
+    document.getElementById("areas_names").innerHTML = txt;
+}

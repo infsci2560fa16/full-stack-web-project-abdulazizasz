@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.sql.*;
 import java.util.*;
 
@@ -228,13 +230,35 @@ public class Main {
       return instructorsDbService.readAll();
     }, gson::toJson);
 
-    get("/courses", (request, response) -> {
+    get("/courses_xml", (request, response) -> {
       try {
         response.type("text/xml");
         return coursesDbService.getAllCourses();
       } catch (Exception e){
         return e;
       }
+    });
+
+
+
+    get("/books", (request, response) -> {
+        try{
+          response.type("text/xml");
+          try{
+            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/public/xml/books.xml"));
+            String line;
+            StringBuilder xml = new StringBuilder();
+            while ((line = br.readLine()) != null){
+              xml.append(line.trim());
+            }
+            return xml.toString();
+          } catch (Exception e){
+            return e.toString();
+          }
+
+        } catch (Exception e){
+          return  e;
+        }
     });
 
 
