@@ -268,11 +268,11 @@ public class Main {
         connection = DatabaseUrl.extract().getConnection();
 
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT name FROM users");
+        ResultSet rs = stmt.executeQuery("SELECT firstname FROM users");
 
         ArrayList<String> output = new ArrayList<String>();
         while (rs.next()) {
-          output.add( "Read from DB: " + rs.getTimestamp("name"));
+          output.add( "Read from DB: " + rs.getTimestamp("firstname"));
         }
 
         attributes.put("results", output);
