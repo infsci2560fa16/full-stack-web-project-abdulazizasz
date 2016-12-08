@@ -54,6 +54,7 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 
         try {
             conn = DatabaseUrl.extract().getConnection();
+            stmt = conn.createStatement();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
