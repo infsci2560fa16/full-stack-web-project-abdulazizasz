@@ -32,7 +32,9 @@ public class InstructorsPostgresDao<T extends Instructors> implements Instructor
         String uri = "jdbc:postgresql://localhost/" + dbName;
 
         try {
-            conn = DriverManager.getConnection(uri, user, passwd);
+//            localhost
+//          conn = DriverManager.getConnection(uri, user, passwd);
+            conn = DatabaseUrl.extract().getConnection();
             stmt = conn.createStatement();
 
             System.out.println("Connecting to PostgreSQL database succeed");

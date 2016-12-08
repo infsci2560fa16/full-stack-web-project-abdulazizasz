@@ -218,7 +218,7 @@ public class Main {
 
 
     get("/aziz", (request, response) -> {
-      return coursesDbService.readAll();
+      return usersDbService.readAll();
     }, gson::toJson);
 
 
