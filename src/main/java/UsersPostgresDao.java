@@ -22,7 +22,7 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
  */
 public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 
-    private Connection conn;
+    private Connection conn =  null;
     private Statement stmt;
 
     public UsersPostgresDao() {
@@ -51,7 +51,7 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 //            }
 //        }
 
-        conn = null;
+
         try {
             conn = DatabaseUrl.extract().getConnection();
         } catch (Exception e) {
