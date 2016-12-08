@@ -218,7 +218,7 @@ public class Main {
 
 
     get("/aziz", (request, response) -> {
-      return usersDbService.readAll();
+      return coursesDbService.readAll();
     }, gson::toJson);
 
 
@@ -285,7 +285,7 @@ public class Main {
       }
     }, new FreeMarkerEngine());
 
-    
+
 
 
 
