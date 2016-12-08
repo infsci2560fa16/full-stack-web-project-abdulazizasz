@@ -21,7 +21,6 @@
                 <li><a id ="myid" href="/shortTutorials">Short Tutorials</a></li>
                 <li><a href="/instructors">Instructors</a></li>
                 <li><a href="/aboutUS">About us</a></li>
-                <li><a href="../usersList.html">Users List</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
