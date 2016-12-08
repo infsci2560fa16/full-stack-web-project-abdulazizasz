@@ -25,33 +25,44 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
     private Connection conn;
     private Statement stmt;
 
-    public UsersPostgresDao(){
-        String user = "abdulaziz";
-        String passwd = "";
-        String dbName = "ischoolera";
-        String uri = "jdbc:postgresql://localhost/" + dbName;
+    public UsersPostgresDao() {
+//        String user = "abdulaziz";
+//        String passwd = "";
+//        String dbName = "ischoolera";
+//        String uri = "jdbc:postgresql://localhost/" + dbName;
+//
+//        try {
+//            conn = DriverManager.getConnection(uri, user, passwd);
+//            stmt = conn.createStatement();
+//
+//            System.out.println("Connecting to PostgreSQL database succeed");
+//        } catch(Exception e) {
+//            System.out.println(e.getMessage());
+//
+//            try {
+//                if(null != stmt) {
+//                    stmt.close();
+//                }
+//                if(null != conn) {
+//                    conn.close();
+//                }
+//            } catch (SQLException sqlException) {
+//                sqlException.printStackTrace();
+//            }
+//        }
 
+        Connection connection = null;
         try {
-            conn = DriverManager.getConnection(uri, user, passwd);
-            stmt = conn.createStatement();
-
-            System.out.println("Connecting to PostgreSQL database succeed");
-        } catch(Exception e) {
+            connection = DatabaseUrl.extract().getConnection();
+        } catch (Exception e) {
             System.out.println(e.getMessage());
-
-            try {
-                if(null != stmt) {
-                    stmt.close();
-                }
-                if(null != conn) {
-                    conn.close();
-                }
-            } catch (SQLException sqlException) {
-                sqlException.printStackTrace();
+        } finally {
+            if (connection != null) try {
+                connection.close();
+            } catch (SQLException e) {
             }
         }
     }
-
     @Override
     public Boolean create(T entity) {
         try{
