@@ -38,3 +38,16 @@ $ heroku open
 For more information about using Java on Heroku, see these Dev Center articles:
 
 - [Java on Heroku](https://devcenter.heroku.com/categories/java)
+
+
+#########################################################################################
+##########################################################################################
+#########################################################################################
+
+### The local url for the database
+
+DATABASE_URL=postgres://localhost:5432/ischoolera 
+
+### Pushing the database to the app using this command
+
+heroku pg:push postgres://localhost:5432/ischoolera DATABASE_URL –app lit-lake-25415
