@@ -51,14 +51,14 @@ public class UsersPostgresDao<T extends Users> implements UsersDbService<T> {
 //            }
 //        }
 
-        Connection connection = null;
+        conn = null;
         try {
-            connection = DatabaseUrl.extract().getConnection();
+            conn = DatabaseUrl.extract().getConnection();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
-            if (connection != null) try {
-                connection.close();
+            if (conn != null) try {
+                conn.close();
             } catch (SQLException e) {
             }
         }
